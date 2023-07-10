@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nisma</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Nisma</a>
+            <ul style="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="Stars.png" id="stars">
+            <h4 id="textP">Portfolio</h4> 
+            <img src="mountains.png" id="mountains">
+        </section>
+        <div class="sec2" id="sec2">
+            <h2>Portfolio link</h2> <br>
+            <p>
+                <a href="https://www.instagram.com/nessatattooz/">@nessatattooz</a>  
+            </p>
+            
+        </div>
+        <script>
+            let stars= document.getElementById('stars');
+            let mountains= document.getElementById('mountains');
+            let textP = document.getElementById('textP');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                textP.style.marginRight = value*4 +'px';
+                mountains.style.top = value*0.1+'px';
+            }) 
+        </script>
+        
+        <footer class="sec4" style="margin-top:200px;">
+            <p>Copyright &copy; 2023 Nisma</p>
+            <p>We promise not to sell or misuse your information. We are not responsible for any incorrect information posted by online reviews.</p>
+        </footer>
+        
+    </body>
+</html>

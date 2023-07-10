@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nisma</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Nisma</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </header>
+        <main>  
+        <section>
+            <img src="Stars.png" id="stars">
+           <!--<img src="logo.png" id="logo">--> 
+            <h2 id="text">Nisma tattoo shop</h2>
+            <img src="mountains.png" id="mountains">
+        </section>
+       
+            <div class="sec" id="sec">
+                <h2>About</h2>
+                <p>
+                    My name is Vanessa, I'm the owner of Nisma, which was founded in 2023.
+                    <br><br>
+                    I've been tattooing since June 2020, starting on my family and friends. I slowly started tattooing people I knew less
+                    and less. <br> Now I find it crazy that people that don't even know me get tattoos from me. It feels surreal sometimes.
+                    <br><br>
+                    I have many dreams and goals in my life, and one of them is being able to tattoo whenever I want, without having 
+                    to worry about anything else. 
+                    <br><br>
+                    Hope you enjoy my content!
+                </p>
+            </div>
+            <script>
+                let stars= document.getElementById('stars');
+                let mountains= document.getElementById('mountains');
+                let text= document.getElementById('text');
+                let textA = document.getElementById('textA');
+                let textC = document.getElementById('textC');
+
+                window.addEventListener('scroll', function(){
+                    let value = window.scrollY;
+                    stars.style.left = value * 0.25 + 'px';
+                    text.style.marginRight = value*4 +'px';
+                    textA.style.marginRight = value*4 +'px';
+                    textC.style.marginRight = value*4 +'px';
+                    mountains.style.top = value*0.1+'px';
+                }) 
+            </script>
+    
+        
+        </main>
+      
+        
+        <footer class="sec4" style="margin-top:350px;">
+            <p>Copyright &copy; 2023 Nisma</p>
+            <p>We promise not to sell or misuse your information. We are not responsible for any incorrect information posted by online reviews.</p>
+        </footer>
+        
+    </body>
+</html>

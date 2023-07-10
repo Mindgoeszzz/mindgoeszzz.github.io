@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:linear-gradient(black,grey);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius:20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: white;
+    color: black;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+/*
+section img#logo
+{
+    width: 50px;
+    height: 50px;
+}
+*/
+section img#mountains
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+#textA
+{
+    position: absolute;
+    color: grey;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+}
+#textC
+{
+    position: absolute;
+    color: grey;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+}
+#textP
+{
+    position: absolute;
+    color: grey;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+}
+.sec
+{
+    position: absolute;
+    padding: 100px;
+    color: white;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sec p
+{
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: white;
+}
+.sec form
+{
+    color: white;
+}
+.sec2
+{
+    position: absolute;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 100px;
+}
+.sec3
+{
+    position: absolute;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 100px;
+}
+.sec4 {
+    position: absolute;
+    font-size: 1em;
+    padding: 100px;
+    text-align: center;
+}
+a:hover { text-decoration: none; color:grey; }
+a:focus { text-decoration: none; color:white; }
+a:active { text-decoration: none; color:#9a0027; }
+a:visited { 
+    text-decoration: none; 
+    color: white; 
+   }
+a {
+    color: white;
+}
+#Vanessa
+{
+    display:block;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    width: 20%;
+
+}
+ul {
+    list-style-type: none;
+}
+body {
+    min-height: 100%;
+}

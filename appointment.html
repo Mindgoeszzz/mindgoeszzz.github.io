@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nisma</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Nisma</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appointment.html" class="active">Appointment</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <section>
+                <img src="Stars.png" id="stars">
+                <h4 id="textA">Appointment</h4>
+                <img src="mountains.png" id="mountains">
+            </section>
+            <div class="sec2" id="sec2">
+                <h2>Appointment form</h2><br>
+                <form action="mailto:info@nisma.ca" method="post" enctype="text/plain">
+                    Name:<br><input type="text" name="name"> <br> <br>
+                    Tattoo placement:<br><input type="text" name="placement"><br><br>
+                    Tattoo size:<br><input type="text" name="size"><br><br>
+                    General idea of the tattoo: <br><textarea name="Text1" cols="40" rows="5"></textarea><br><br>
+                    Your e-mail or Instagram:<br><input type="text" name="contactinfo"><br><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </main>
+            
+            <script>
+                let stars= document.getElementById('stars');
+                let mountains= document.getElementById('mountains');
+                let textA = document.getElementById('textA');
+
+                window.addEventListener('scroll', function(){
+                    let value = window.scrollY;
+                    stars.style.left = value * 0.25 + 'px';
+                    textA.style.marginRight = value*4 +'px';
+                    mountains.style.top = value*0.1+'px';
+                }) 
+            </script>
+        
+        
+        <footer class="sec4" style="margin-top:550px;">
+            <p>Copyright &copy; 2023 Nisma</p>
+            <p>We promise not to sell or misuse your information. We are not responsible for any incorrect information posted by online reviews.</p>
+        </footer>
+        
+    </body>
+</html>

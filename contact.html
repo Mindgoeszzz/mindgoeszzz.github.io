@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nisma</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Nisma</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="Stars.png" id="stars">
+            <h2 id="textC">Contact</h2>
+            <img src="mountains.png" id="mountains">
+        </section>
+        <div class="sec3" id="sec3">
+            <h2>Contact information</h2> <br>
+            <p>
+                E-mail: <a href=mailto:“info@nisma.ca”>info@nisma.ca</a>
+                <br><br>
+                Instagram: <a href="https://www.instagram.com/nessatattooz/">@nessatattooz</a>  <a href="https://www.instagram.com/nismatattooshop/">@nismatattooshop</a> 
+                <br><br>
+                Facebook: <a href="https://www.instagram.com/nessatattooz/">Nisma Tattoo Shop</a> 
+                <br><br>
+                Address: <a href="https://www.google.com/maps/place/399+Bd+Adolphe-Chapleau,+Bois-des-Filion,+QC+J6Z+1H5/@45.6683854,-73.7565192,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc8d899f7b2c74f:0x8f744ebc18b165e9!8m2!3d45.6683854!4d-73.7565192!16s%2Fg%2F11j0vs6crr">399 Adolphe-Chapleau Blvd., Bois-des-filion, QC J6Z 1H5</a> 
+                <br><br>
+                Phone number: <a href="tel:+14508880059">(450)-888-0059</a>
+            </p>
+        </div>
+        <script>
+            let stars= document.getElementById('stars');
+            let mountains= document.getElementById('mountains');
+            let textC = document.getElementById('textC');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                textC.style.marginRight = value*4 +'px';
+                mountains.style.top = value*0.1+'px';
+            }) 
+        </script>
+        
+        <footer class="sec4" style="margin-top:350px;">
+            <p>Copyright &copy; 2023 Nisma</p>
+            <p>We promise not to sell or misuse your information. We are not responsible for any incorrect information posted by online reviews.</p>
+        </footer>
+        
+    </body>
+</html>

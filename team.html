@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nisma</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Nisma</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="team.html" class="active">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </header>
+        <section>
+            <img src="Stars.png" id="stars">
+           <!--<img src="logo.png" id="logo">--> 
+            <h4 id="textA">Our Team</h4>
+            <img src="mountains.png" id="mountains">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Vanessa</h2>
+            <h3>Owner, Tattoo Artist</h3>
+            <h4>Tattooing since June 2020</h4>
+            <br>
+            <img src="Vanessa.png" id="Vanessa">
+            <br><br>
+            <h3>That's it for our team...for now ;)</h3>
+        </div>
+        <script>
+            let stars= document.getElementById('stars');
+            let mountains= document.getElementById('mountains');
+            let textA = document.getElementById('textA');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                textA.style.marginRight = value*4 +'px';
+                mountains.style.top = value*0.1+'px';
+            }) 
+        </script>
+        
+        <footer class="sec4" style="margin-top:800px;">
+            <p>Copyright &copy; 2023 Nisma</p>
+            <p>We promise not to sell or misuse your information. We are not responsible for any incorrect information posted by online reviews.</p>
+        </footer>
+        
+    </body>
+</html>
